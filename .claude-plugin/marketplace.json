@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "proposal-team",
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Patrick's plugin marketplace.",
+    "pluginRoot": "./plugins"
+  },
+  "owner": {
+    "name": "Patrick Saxton"
+  },
+  "plugins": [
+    {
+      "name": "proposal-team-plugin",
+      "description": "A multi-agent team for writing and reviewing federal government procurement proposals. Includes specialized agents for compliance review, solution architecture, past performance, growth strategy, and subject matter expertise.",
+      "source": "./plugins/proposal-team-plugin",
+
+      "author": {
+        "name": "Patrick Saxton"
+      },
+      "category": "development-workflows"
+    }
+  ]
+}

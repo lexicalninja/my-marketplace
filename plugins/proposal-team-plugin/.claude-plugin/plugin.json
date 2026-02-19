@@ -1,0 +1,10 @@
+{
+  "name": "proposal-team-plugin",
+  "version": "1.0.0",
+  "description": "A multi-agent team for writing and reviewing federal government procurement proposals. Includes specialized agents for compliance review, solution architecture, past performance, growth strategy, and subject matter expertise, plus skills for analyzing solicitations, drafting sections, and running the full proposal workflow.",
+  "author": {
+    "name": "Patrick Saxton"
+  },
+  "license": "MIT",
+  "keywords": ["proposal", "federal", "government", "procurement", "rfp", "compliance", "contracting"]
+}
