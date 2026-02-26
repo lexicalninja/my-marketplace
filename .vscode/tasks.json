@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "watch",
+            "path": "plugins/proposal-team-extension",
+            "label": "npm: watch - proposal-team-extension",
+            "problemMatcher": "$tsc-watch",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "never"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "npm",
+            "script": "compile",
+            "path": "plugins/proposal-team-extension",
+            "label": "npm: compile - proposal-team-extension",
+            "problemMatcher": "$tsc"
+        }
+    ]
+}

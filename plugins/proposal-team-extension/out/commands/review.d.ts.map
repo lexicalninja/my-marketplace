@@ -1,0 +1,1 @@
+{"version":3,"file":"review.d.ts","sourceRoot":"","sources":["../../src/commands/review.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,MAAM,QAAQ,CAAC;AACjC,OAAO,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAC;AAanD;;;GAGG;AACH,wBAAsB,YAAY,CAC9B,OAAO,EAAE,MAAM,CAAC,WAAW,EAC3B,MAAM,EAAE,MAAM,CAAC,kBAAkB,EACjC,KAAK,EAAE,MAAM,CAAC,iBAAiB,EAC/B,SAAS,EAAE,cAAc,GAC1B,OAAO,CAAC,IAAI,CAAC,CA+Uf"}

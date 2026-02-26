@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Proposal Team Extension",
+            "type": "extensionHost",
+            "request": "launch",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}/plugins/proposal-team-extension"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/plugins/proposal-team-extension/out/**/*.js"
+            ],
+            "preLaunchTask": "npm: watch - proposal-team-extension"
+        }
+    ]
+}

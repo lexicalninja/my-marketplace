@@ -1,0 +1,63 @@
+{
+  "name": "proposal-team",
+  "displayName": "Proposal Team",
+  "description": "Multi-agent federal proposal development system for VS Code Chat",
+  "version": "0.0.1",
+  "publisher": "proposal-team",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Chat"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "proposal-team.participant",
+        "fullName": "Proposal Team",
+        "name": "proposal-team",
+        "description": "Multi-agent federal proposal development assistant. Orchestrates specialized agents to analyze solicitations, create outlines, draft sections, and review proposals.",
+        "isSticky": true,
+        "commands": [
+          {
+            "name": "setup",
+            "description": "Set up project directory structure for proposal development"
+          },
+          {
+            "name": "analyze",
+            "description": "Analyze a solicitation — extract requirements, evaluation factors, risks, Q&A candidates"
+          },
+          {
+            "name": "outline",
+            "description": "Create a Blue Outline with section-by-section writing instructions"
+          },
+          {
+            "name": "draft",
+            "description": "Draft one or more proposal sections as proposal-ready prose"
+          },
+          {
+            "name": "review",
+            "description": "Run a multi-agent proposal review with debate rounds"
+          },
+          {
+            "name": "run",
+            "description": "Run the complete proposal workflow: analyze → outline → draft → review"
+          }
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}
