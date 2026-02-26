@@ -1,1 +1,0 @@
-{"version":3,"file":"participant.d.ts","sourceRoot":"","sources":["../src/participant.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,MAAM,QAAQ,CAAC;AAYjC,qBAAa,uBAAuB;IAGpB,OAAO,CAAC,OAAO;IAF3B,OAAO,CAAC,SAAS,CAAiB;gBAEd,OAAO,EAAE,MAAM,CAAC,gBAAgB;IAIpD,QAAQ,IAAI,MAAM,CAAC,UAAU;YAQf,aAAa;IAmD3B;;;OAGG;YACW,qBAAqB;CAqCtC"}
