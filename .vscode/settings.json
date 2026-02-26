@@ -1,0 +1,7 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "git rm": true,
+        "git commit": true,
+        "git push": true
+    }
+}

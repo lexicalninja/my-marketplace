@@ -51,8 +51,9 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
+    "prebuild": "node scripts/copy-resources.js",
+    "compile": "npm run prebuild && tsc -p ./",
+    "watch": "npm run prebuild && tsc -watch -p ./",
     "lint": "eslint src --ext ts"
   },
   "devDependencies": {
