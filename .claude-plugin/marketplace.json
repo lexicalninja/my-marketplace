@@ -23,11 +23,9 @@
       "name": "tech-debt-audit",
       "description": "Comprehensive technical debt and architecture audit skill. Three-phase methodology (discovery → signals → deep read) across Go, Python, JavaScript, Java, and Rust. Produces a structured markdown report with severity-ranked issues and a remediation roadmap.",
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/lexicalninja/tech-debt-audit.git",
-        "path": "tech-debt-audit",
-        "ref": "main",
-        "sha": "1528eca"
+        "source": "github",
+        "repo": "lexicalninja/tech-debt-audit",
+        "path": "tech-debt-audit"
       },
       "author": {
         "name": "Patrick Saxton"
