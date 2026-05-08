@@ -14,11 +14,26 @@
       "name": "proposal-team-plugin",
       "description": "A multi-agent team for writing and reviewing federal government procurement proposals. Includes specialized agents for compliance review, solution architecture, past performance, growth strategy, and subject matter expertise.",
       "source": "./plugins/proposal-team-plugin",
-
       "author": {
         "name": "Patrick Saxton"
       },
       "category": "development-workflows"
+    },
+    {
+      "name": "tech-debt-audit",
+      "description": "Comprehensive technical debt and architecture audit skill. Three-phase methodology (discovery → signals → deep read) across Go, Python, JavaScript, Java, and Rust. Produces a structured markdown report with severity-ranked issues and a remediation roadmap.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/lexicalninja/tech-debt-audit.git",
+        "path": "tech-debt-audit",
+        "ref": "main",
+        "sha": "1528eca"
+      },
+      "author": {
+        "name": "Patrick Saxton"
+      },
+      "category": "development",
+      "keywords": ["tech-debt", "audit", "code-quality", "architecture", "static-analysis"]
     }
   ]
 }
