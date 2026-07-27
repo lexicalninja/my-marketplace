@@ -1,26 +1,37 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "proposal-team",
-  "metadata": {
-    "version": "1.0.0",
-    "description": "Patrick's plugin marketplace.",
-    "pluginRoot": "./plugins"
-  },
+  "name": "my-marketplace",
   "owner": {
     "name": "Patrick Saxton"
   },
+  "metadata": {
+    "description": "Patrick's Claude Code plugin marketplace — a thin catalog of product repos.",
+    "version": "2.0.0"
+  },
+  "renames": {
+    "proposal-team-plugin": "proposal-team"
+  },
   "plugins": [
     {
-      "name": "proposal-team-plugin",
-      "description": "A multi-agent team for writing and reviewing federal government procurement proposals. Includes specialized agents for compliance review, solution architecture, past performance, growth strategy, and subject matter expertise.",
-      "source": "./plugins/proposal-team-plugin",
-      "author": {
-        "name": "Patrick Saxton"
+      "name": "mlst",
+      "displayName": "My Little Scrum Team",
+      "description": "A coordinated AI scrum team. The /build command orchestrates specialist agents (specification writer, scrum master, UI/UX designer, implementation engineer, infrastructure engineer, test runner, and code reviewer) directly from the main conversation, plus reusable skills for development workflows.",
+      "source": {
+        "source": "github",
+        "repo": "lexicalninja/my-little-scrum-team"
       },
-      "category": "development-workflows"
+      "author": {
+        "name": "Patrick Saxton",
+        "email": "lexicalninja@gmail.com"
+      },
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["scrum", "agents", "workflow", "development", "team"],
+      "homepage": "https://github.com/lexicalninja/my-little-scrum-team"
     },
     {
       "name": "tech-debt-audit",
+      "displayName": "Tech Debt Audit",
       "description": "Comprehensive technical debt and architecture audit skill. Three-phase methodology (discovery → signals → deep read) across Go, Python, JavaScript, Java, and Rust. Produces a structured markdown report with severity-ranked issues and a remediation roadmap.",
       "source": {
         "source": "github",
@@ -30,8 +41,26 @@
       "author": {
         "name": "Patrick Saxton"
       },
+      "license": "MIT",
       "category": "development",
-      "keywords": ["tech-debt", "audit", "code-quality", "architecture", "static-analysis"]
+      "keywords": ["tech-debt", "audit", "code-quality", "architecture", "static-analysis"],
+      "homepage": "https://github.com/lexicalninja/tech-debt-audit"
+    },
+    {
+      "name": "proposal-team",
+      "displayName": "Proposal Team",
+      "description": "A multi-agent team for writing and reviewing federal government procurement proposals. Includes specialized agents for compliance review, solution architecture, past performance, growth strategy, and subject matter expertise.",
+      "source": {
+        "source": "github",
+        "repo": "lexicalninja/proposal-team"
+      },
+      "author": {
+        "name": "Patrick Saxton"
+      },
+      "license": "MIT",
+      "category": "development-workflows",
+      "keywords": ["proposal", "federal", "government", "procurement", "rfp", "compliance"],
+      "homepage": "https://github.com/lexicalninja/proposal-team"
     }
   ]
 }

@@ -1,0 +1,40 @@
+name: Validate Marketplace
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.claude-plugin/**'
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+  pull_request:
+    branches: [main]
+    paths:
+      - '.claude-plugin/**'
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+
+jobs:
+  validate:
+    name: Validate Plugin Marketplace
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Validate marketplace
+        run: claude plugin validate .
+
+      - name: Validate JSON syntax
+        run: |
+          echo "Validating marketplace.json..."
+          jq . .claude-plugin/marketplace.json
